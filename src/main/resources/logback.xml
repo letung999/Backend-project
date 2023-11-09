@@ -1,0 +1,11 @@
+<configuration>
+    <appender name="cloudwatch" class="com.ppn.mock.backendmockppn.utils.CloudWatchAppender">
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>INFO</level>
+        </filter>
+    </appender>
+
+    <root level="info">
+        <appender-ref ref="cloudwatch"/>
+    </root>
+</configuration>
